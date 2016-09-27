@@ -1,0 +1,4 @@
+nbactions.xml
+finance/target/**
+finance/output/**
+aws-service/target/**
