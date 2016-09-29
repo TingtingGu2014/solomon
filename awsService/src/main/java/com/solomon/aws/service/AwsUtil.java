@@ -21,7 +21,7 @@ public class AwsUtil {
     
     public static final String FROM = "ztgtt2004@gmail.com";
     public static final String TO = "gttzt2004@gmail.com";
-    public static final String DEVELOPER_PROFILE_NAME = "developer";
+    public static final String DEVELOPER_PROFILE_NAME = "default";
     public static final Regions DEVELOPER_REGION = Regions.US_WEST_2;
     
     public static AWSCredentials getAwsCredentials(){

@@ -81,7 +81,7 @@ public class AwsMailServ {
             try {
                 AWSCredentials credentials = AwsUtil.getAwsCredentials();
                 AmazonSimpleEmailServiceClient client = AwsUtil.getAwsEmailServClient(credentials);
-                Region REGION = Region.getRegion(AwsUtil.DEVELOPER_REGION);
+		Region REGION = Region.getRegion(AwsUtil.DEVELOPER_REGION);
                 client.setRegion(REGION);
 
             // Send the email.
@@ -91,7 +91,7 @@ public class AwsMailServ {
                 throw new AmazonClientException(
                         "Cannot load the credentials from the credential profiles file. " +
                         "Please make sure that your credentials file is at the correct " +
-                        "location (/Users/zhao0677/.aws/credentials), and is in valid format.",
+                        "location, and is in valid format.",
                         e);
             }
             

@@ -5,8 +5,6 @@
  */
 package com.solomon.finance;
 
-import org.shareok.data.documentProcessor.FileUtil;
-import org.shareok.data.htmlrequest.HttpRequestHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -15,21 +13,15 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 public class Inplay {
     public static final String LINK = "http://finance.yahoo.com/news/inplay-briefing-com-055139997.html";
-    private HttpRequestHandler httpHandler;
-    
-    @Autowired
-    public void setHttpHandler(HttpRequestHandler httpHandler){
-        this.httpHandler = httpHandler;
-    }
     
     public String getInplayDoc(String url){
-        return httpHandler.sendGet(url);
+        return "";
 //        WebCrower crower = new WebCrower();
 //        crower.
 //        StringBuffer response = 
     }
     
     public void saveResponse(String response, String path){
-        FileUtil.outputStringToFile(response, path);
+    	;
     }
 }

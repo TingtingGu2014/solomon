@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args){
     ApplicationContext context = new ClassPathXmlApplicationContext("financeContext.xml");
         Inplay bean = (Inplay)context.getBean("inplay");
-        String response = bean.getInplayDoc("http://finance.yahoo.com/news/inplay-briefing-com-055139997.html?bypass=true#");
-        bean.saveResponse(response, "/Users/zhao0677/Projects/solomon/finance/output/09-26-2016.txt");
+//        String response = bean.getInplayDoc("http://finance.yahoo.com/news/inplay-briefing-com-055139997.html?bypass=true#");
+//        bean.saveResponse(response, "/Users/zhao0677/Projects/solomon/finance/output/09-26-2016.txt");
     }
 }
