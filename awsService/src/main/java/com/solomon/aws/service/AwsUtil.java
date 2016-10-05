@@ -19,8 +19,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class AwsUtil {
     
-    public static final String FROM = "ztgtt2004@gmail.com";
-    public static final String TO = "gttzt2004@gmail.com";
     public static final String DEVELOPER_PROFILE_NAME = "default";
     public static final Regions DEVELOPER_REGION = Regions.US_WEST_2;
     
@@ -32,7 +30,7 @@ public class AwsUtil {
             throw new AmazonClientException(
                     "Cannot load the credentials from the credential profiles file. " +
                     "Please make sure that your credentials file is at the correct " +
-                    "location (/Users/zhao0677/.aws/credentials), and is in valid format.",
+                    "location, and is in valid format.",
                     e);
         }        
     }
